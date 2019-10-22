@@ -1,1 +1,18 @@
-aaaaa
+   Try
+            txt_id.Text = GRILLA.CurrentRow.Cells(0).Value.ToString()
+            txt_NombreFantasia.Text = GRILLA.CurrentRow.Cells(1).Value.ToString()
+            txt_RazonSocial.Text = GRILLA.CurrentRow.Cells(2).Value.ToString()
+            cbo_localidad.SelectedIndex = GRILLA.CurrentRow.Cells(3).Value.ToString()
+            txt_domicilio.Text = GRILLA.CurrentRow.Cells(4).Value.ToString()
+            txt_cuit.Text = GRILLA.CurrentRow.Cells(5).Value.ToString()
+            txt_telefonoC.Text = GRILLA.CurrentRow.Cells(6).Value.ToString()
+            txt_telefonoP.Text = GRILLA.CurrentRow.Cells(7).Value.ToString()
+            txt_email.Text = GRILLA.CurrentRow.Cells(8).Value.ToString()
+            cbo_vendedor.SelectedIndex = GRILLA.CurrentRow.Cells(9).Value.ToString()
+            cbo_estado.SelectedIndex = GRILLA.CurrentRow.Cells(10).Value.ToString()
+            cbo_categoria.SelectedIndex = GRILLA.CurrentRow.Cells(11).Value.ToString()
+            cbo_zona.SelectedIndex = GRILLA.CurrentRow.Cells(12).Value.ToString()
+            txt_secuencia.Text = GRILLA.CurrentRow.Cells(13).Value.ToString()
+
+        Catch
+        End Try
