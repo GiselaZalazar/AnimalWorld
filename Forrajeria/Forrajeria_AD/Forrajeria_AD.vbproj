@@ -81,6 +81,9 @@
   <ItemGroup>
     <Compile Include="C_Clientes.vb" />
     <Compile Include="C_compras.vb" />
+    <Compile Include="C_facturacion.vb" />
+    <Compile Include="C_grillaCliente.vb" />
+    <Compile Include="C_grillaProducto.vb" />
     <Compile Include="C_localidad.vb" />
     <Compile Include="C_producto.vb" />
     <Compile Include="C_provincia.vb" />

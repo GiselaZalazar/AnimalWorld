@@ -88,11 +88,29 @@
     <Compile Include="Compras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="facturacion.Designer.vb">
+      <DependentUpon>facturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grillaCliente.Designer.vb">
+      <DependentUpon>grillaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grillaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grillaProducto.Designer.vb">
+      <DependentUpon>grillaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grillaProducto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Localidad.Designer.vb">
@@ -154,8 +172,17 @@
     <EmbeddedResource Include="Compras.resx">
       <DependentUpon>Compras.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="facturacion.resx">
+      <DependentUpon>facturacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grillaCliente.resx">
+      <DependentUpon>grillaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grillaProducto.resx">
+      <DependentUpon>grillaProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Localidad.resx">
       <DependentUpon>Localidad.vb</DependentUpon>

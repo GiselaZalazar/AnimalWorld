@@ -12,3 +12,12 @@ D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_WEB\obj
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.pdb
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.vbprojResolveAssemblyReference.cache
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\bin\Forrajeria_WEB.dll
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\bin\Forrajeria_WEB.pdb
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\bin\Forrajeria_WEB.xml
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.vbprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.Resources.resources
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.vbproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.dll
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.xml
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_WEB\obj\Debug\Forrajeria_WEB.pdb

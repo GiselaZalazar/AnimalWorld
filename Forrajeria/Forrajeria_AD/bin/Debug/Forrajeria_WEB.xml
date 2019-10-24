@@ -6,56 +6,7 @@ Forrajeria_WEB
 </name>
 </assembly>
 <members>
-<member name="F:Forrajeria_WEB.Login.RegisterHyperLink">
-	<summary>
-RegisterHyperLink control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Forrajeria_WEB.Login.LoginUser">
-	<summary>
-LoginUser control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Application">
-	<summary>
- Returns information about the current application.
- </summary>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="P:Forrajeria_WEB.My.MyWebExtension.WebServices">
-	<summary>
- Provides access to WebServices added to this project.
- </summary>
-</member><member name="T:Forrajeria_WEB.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
-</member><member name="F:Forrajeria_WEB.Site.HeadContent">
+<member name="F:Forrajeria_WEB.Site.HeadContent">
 	<summary>
 HeadContent control.
 </summary>
@@ -103,9 +54,17 @@ MainContent control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Forrajeria_WEB.ChangePassword.ChangeUserPassword">
+</member><member name="F:Forrajeria_WEB.Login.RegisterHyperLink">
 	<summary>
-ChangeUserPassword control.
+RegisterHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Forrajeria_WEB.Login.LoginUser">
+	<summary>
+LoginUser control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -122,6 +81,47 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:Forrajeria_WEB.Register.RegisterUserWizardStep">
 	<summary>
 RegisterUserWizardStep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:Forrajeria_WEB.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:Forrajeria_WEB.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Forrajeria_WEB.ChangePassword.ChangeUserPassword">
+	<summary>
+ChangeUserPassword control.
 </summary>
 	<remarks>
 Auto-generated field.

@@ -33,6 +33,7 @@ Partial Class frm_forrajeria
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarcasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SubrubrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FacturacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,9 +48,9 @@ Partial Class frm_forrajeria
         '
         'DatosImportantesToolStripMenuItem
         '
-        Me.DatosImportantesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ProvinciaToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VendedorToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.MarcasToolStripMenuItem})
+        Me.DatosImportantesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.ProvinciaToolStripMenuItem, Me.LocalidadToolStripMenuItem, Me.VendedorToolStripMenuItem, Me.ProductosToolStripMenuItem, Me.MarcasToolStripMenuItem, Me.FacturacionToolStripMenuItem})
         Me.DatosImportantesToolStripMenuItem.Name = "DatosImportantesToolStripMenuItem"
-        Me.DatosImportantesToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+        Me.DatosImportantesToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
         Me.DatosImportantesToolStripMenuItem.Text = "COMPLETAR"
         '
         'ClientesToolStripMenuItem
@@ -101,6 +102,12 @@ Partial Class frm_forrajeria
         Me.SubrubrosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SubrubrosToolStripMenuItem.Text = "Subrubros"
         '
+        'FacturacionToolStripMenuItem
+        '
+        Me.FacturacionToolStripMenuItem.Name = "FacturacionToolStripMenuItem"
+        Me.FacturacionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FacturacionToolStripMenuItem.Text = "Facturacion"
+        '
         'frm_forrajeria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,5 +136,6 @@ Partial Class frm_forrajeria
     Friend WithEvents ProductosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MarcasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SubrubrosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FacturacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
