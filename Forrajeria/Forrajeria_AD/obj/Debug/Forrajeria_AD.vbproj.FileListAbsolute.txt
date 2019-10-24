@@ -1,0 +1,17 @@
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_AD.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_AD.pdb
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_AD.xml
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.Resources.resources
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.xml
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.pdb
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.dll
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.pdb
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.xml
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbprojResolveAssemblyReference.cache
+D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbproj.GenerateResource.Cache
