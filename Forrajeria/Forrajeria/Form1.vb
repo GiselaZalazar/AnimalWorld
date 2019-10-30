@@ -39,7 +39,12 @@ Public Class frm_forrajeria
         frm_rubros.Show()
     End Sub
 
+<<<<<<< HEAD
     Private Sub FacturacionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FacturacionToolStripMenuItem.Click
         frm_facturacion.Show()
+=======
+    Private Sub ProveedorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedorToolStripMenuItem.Click
+        frm_roveedores.Show()
+>>>>>>> origin/master
     End Sub
 End Class

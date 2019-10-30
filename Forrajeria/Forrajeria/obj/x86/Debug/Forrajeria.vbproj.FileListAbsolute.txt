@@ -25,6 +25,7 @@ D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria\obj\x86
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_producto.resources
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_rubros.resources
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_subrubros.resources
+<<<<<<< HEAD
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria.exe.config
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.exe
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.xml
@@ -55,3 +56,33 @@ C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forr
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria_AD.xml
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_facturacion.resources
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_grillaCliente.resources
+=======
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria.exe.config
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.exe
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.xml
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.pdb
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria.exe
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria.pdb
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria.xml
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria_AD.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria_AD.pdb
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\bin\Debug\Forrajeria_AD.xml
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.vbprojResolveAssemblyReference.cache
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_cliente.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_compras.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_forrajeria.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_localidad.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.Resources.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_producto.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_provincia.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_rubros.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_subrubros.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_vendedor.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.vbproj.GenerateResource.Cache
+D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_roveedores.resources
+>>>>>>> origin/master

@@ -15,6 +15,7 @@ D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.xml
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbprojResolveAssemblyReference.cache
 D:\Desarrollo de software 2do año\PROGRAMACION II\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbprojResolveAssemblyReference.cache
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.Resources.resources
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbproj.GenerateResource.Cache
@@ -27,3 +28,17 @@ C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\F
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.dll
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.pdb
 C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.xml
+=======
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_AD.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_AD.pdb
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_AD.xml
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.pdb
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\bin\Debug\Forrajeria_WEB.xml
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbprojResolveAssemblyReference.cache
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.Resources.resources
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.vbproj.GenerateResource.Cache
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.dll
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.xml
+D:\Git\AnimalWorld\Forrajeria\Forrajeria_AD\obj\Debug\Forrajeria_AD.pdb
+>>>>>>> origin/master
