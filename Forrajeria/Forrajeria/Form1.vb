@@ -38,4 +38,8 @@ Public Class frm_forrajeria
     Private Sub MarcasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarcasToolStripMenuItem.Click
         frm_rubros.Show()
     End Sub
+
+    Private Sub ProveedorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedorToolStripMenuItem.Click
+        frm_roveedores.Show()
+    End Sub
 End Class

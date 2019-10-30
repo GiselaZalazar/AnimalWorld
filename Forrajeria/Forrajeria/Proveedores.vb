@@ -2,7 +2,7 @@
 Imports Forrajeria_AD
 Imports System.Data.SqlClient
 Imports System.Configuration
-Public Class frm_cliente
+Public Class frm_roveedores
     Private eEstado As EstadodelFormulario
     Public Enum EstadodelFormulario
         eConsulta = 1
@@ -25,10 +25,10 @@ Public Class frm_cliente
                     Limpiar()
                     DesHabililarEdicion()
                     DesHabililarComandos()
-                    cmd_agregarcliente.Enabled = True
+                    cmd_agregar.Enabled = True
                     cmd_aceptar.Enabled = False
                     cmd_cancelar.Enabled = False
-                    cmd_modificarcliente.Enabled = True
+                    cmd_modificar.Enabled = True
                     cmd_eliminar.Enabled = True
                     Grilla.Enabled = True
                     Panel1.BackColor = Color.White
@@ -38,11 +38,11 @@ Public Class frm_cliente
                 Case EstadodelFormulario.eAgregar
 
                     HabililarEdicion()
-                    txt_idcliente.Enabled = False
+                    txt_idproveedor.Enabled = False
                     cmd_aceptar.Enabled = True
                     cmd_cancelar.Enabled = True
                     cmd_eliminar.Enabled = False
-                    cmd_modificarcliente.Enabled = False
+                    cmd_modificar.Enabled = False
                     DesHabililarComandos()
                     Grilla.Enabled = False
                     Limpiar()
@@ -54,10 +54,10 @@ Public Class frm_cliente
                 Case EstadodelFormulario.eEditar
 
                     HabililarEdicion()
-                    txt_idcliente.Enabled = True
+                    txt_idproveedor.Enabled = True
                     cmd_aceptar.Enabled = True
                     cmd_cancelar.Enabled = True
-                    cmd_modificarcliente.Enabled = True
+                    cmd_modificar.Enabled = True
                     cmd_eliminar.Enabled = False
                     DesHabililarComandos()
                     Grilla.Enabled = False
@@ -68,10 +68,10 @@ Public Class frm_cliente
                 Case EstadodelFormulario.eEliminar
 
                     HabililarEdicion()
-                    txt_idcliente.Enabled = True
+                    txt_idproveedor.Enabled = True
                     cmd_aceptar.Enabled = True
                     cmd_cancelar.Enabled = True
-                    cmd_modificarcliente.Enabled = False
+                    cmd_modificar.Enabled = False
                     cmd_eliminar.Enabled = True
                     DesHabililarComandos()
                     Grilla.Enabled = False
@@ -83,82 +83,80 @@ Public Class frm_cliente
             eEstado = vNewValue
         End Set
     End Property
-
     Private Sub HabililarEdicion()
 
 
-        txt_idcliente.Enabled = True
+        txt_idproveedor.Enabled = True
         txt_razonsocial.Enabled = True
-        txt_nombrefantacia.Enabled = True
+        txt_nombreyapellido.Enabled = True
         cbo_localidad.Enabled = True
         txt_domicilio.Enabled = True
-        txt_telefonoparticular.Enabled = True
-        txt_teledonocomercial.Enabled = True
+        txt_telefono.Enabled = True
         txt_email.Enabled = True
         cbo_categoriaiva.Enabled = True
-        txt_numerodecuit.Enabled = True
-        cbo_vendedor.Enabled = True
-        cbo_zona.Enabled = True
-        txt_secuencia.Enabled = True
         cbo_estado.Enabled = True
+        txt_numerocuit.Enabled = True
+        txt_ciudad.Enabled = True
+        txt_codigopostal.Enabled = True
+        cbo_producto.Enabled = True
+        cbo_provincia.Enabled = True
 
-     
 
     End Sub
 
     Private Sub DesHabililarEdicion()
 
-        txt_idcliente.Enabled = False
+        txt_idproveedor.Enabled = False
         txt_razonsocial.Enabled = False
-        txt_nombrefantacia.Enabled = False
+        txt_nombreyapellido.Enabled = False
         cbo_localidad.Enabled = False
         txt_domicilio.Enabled = False
-        txt_telefonoparticular.Enabled = False
-        txt_teledonocomercial.Enabled = False
+        txt_telefono.Enabled = False
         txt_email.Enabled = False
         cbo_categoriaiva.Enabled = False
-        txt_numerodecuit.Enabled = False
-        cbo_vendedor.Enabled = False
-        cbo_zona.Enabled = False
-        txt_secuencia.Enabled = False
+        txt_numerocuit.Enabled = False
         cbo_estado.Enabled = False
+        txt_ciudad.Enabled = False
+        txt_codigopostal.Enabled = False
+        cbo_producto.Enabled = False
+        cbo_provincia.Enabled = False
 
-     
+
 
     End Sub
 
     Private Sub HabililarComandos()
 
-        cmd_agregarcliente.Enabled = True
-        cmd_modificarcliente.Enabled = True
-
+        cmd_agregar.Enabled = True
+        cmd_modificar.Enabled = True
+        cmd_eliminar.Enabled = True
 
     End Sub
 
     Private Sub DesHabililarComandos()
 
-        cmd_agregarcliente.Enabled = False
-        cmd_modificarcliente.Enabled = False
-
+        cmd_agregar.Enabled = False
+        cmd_modificar.Enabled = False
+        cmd_eliminar.Enabled = False
 
     End Sub
     Private Sub Limpiar()
 
         CargarGrilla()
-        txt_idcliente.Text = ""
+        txt_idproveedor.Text = ""
         cbo_localidad.Text = ""
         cbo_categoriaiva.Text = ""
-        cbo_vendedor.Text = ""
-        cbo_zona.Text = ""
         txt_domicilio.Text = ""
         txt_email.Text = ""
-        txt_telefonoparticular.Text = ""
-        txt_teledonocomercial.Text = ""
-        txt_numerodecuit.Text = ""
+        txt_telefono.Text = ""
+        txt_numerocuit.Text = ""
         txt_razonsocial.Text = ""
-        txt_nombrefantacia.Text = ""
-        txt_secuencia.Text = ""
+        txt_codigopostal.Text = ""
+        txt_ciudad.Text = ""
         cbo_estado.Text = ""
+        cbo_producto.Text = ""
+        cbo_provincia.Text = ""
+
 
 
     End Sub
@@ -167,23 +165,11 @@ Public Class frm_cliente
         BuscarTodos()
 
     End Sub
-
-
-    Private Sub frm_cliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Estado = EstadodelFormulario.eConsulta
-        cargarLocalidad()
-        cargarzona()
-        cargarCategortiaiva()
-        cargarvendedor()
-
-        cargarestado()
-
-    End Sub
 #Region "Funciones"
 
     Private Function Validar() As Boolean
 
-        If txt_razonsocial.Text = "" And txt_nombrefantacia.Text = "" And cbo_localidad.SelectedValue = "1" And txt_domicilio.Text = "" And txt_telefonoparticular.Text = "" And txt_teledonocomercial.Text = "" And txt_email.Text = "" And cbo_categoriaiva.SelectedValue = "1" And txt_numerodecuit.Text = "" And cbo_vendedor.SelectedValue = "1" And cbo_zona.SelectedValue = "1" And txt_secuencia.Text = "1" And cbo_estado.SelectedValue = "1" Then
+        If txt_razonsocial.Text = "" And txt_nombreyapellido.Text = "" And cbo_localidad.SelectedValue = "1" And txt_domicilio.Text = "" And txt_telefono.Text = "" And txt_email.Text = "" And cbo_categoriaiva.SelectedValue = "1" And txt_numerocuit.Text = "" And cbo_producto.SelectedValue = "1" And cbo_provincia.SelectedValue = "1" And txt_ciudad.Text = "" And cbo_estado.SelectedValue = "1" And txt_codigopostal.Text = "" Then
 
             MsgBox("Complete datos", MsgBoxStyle.Exclamation, "Mensaje")
             Return False
@@ -198,27 +184,25 @@ Public Class frm_cliente
 #End Region
 #Region "Botones de Comando"
 
-
-    Private Sub cmd_limpiarcliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_limpiarcliente.Click
-        Me.Estado = EstadodelFormulario.eConsulta
-    End Sub
-
-    Private Sub cmd_modificarcliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_modificarcliente.Click
-        Me.Estado = EstadodelFormulario.eEditar
-        CargarGrilla()
-    End Sub
-
-    Private Sub cmd_agregarcliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_agregarcliente.Click
+    Private Sub cmd_agregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_agregar.Click
         Me.Estado = EstadodelFormulario.eAgregar
 
         CargarGrilla()
     End Sub
+    Private Sub cmd_modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_modificar.Click
+        Me.Estado = EstadodelFormulario.eEditar
+        CargarGrilla()
+    End Sub
+
     Private Sub cmd_eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_eliminar.Click
         Me.Estado = EstadodelFormulario.eEliminar
 
         CargarGrilla()
     End Sub
 
+    Private Sub cmd_limpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_limpiar.Click
+        Me.Estado = EstadodelFormulario.eConsulta
+    End Sub
 
     Private Sub cmd_aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_aceptar.Click
         Try
@@ -226,45 +210,45 @@ Public Class frm_cliente
             If Validar() = True Then
 
 
-                Dim Ocliente As New C_Clientes
+                Dim Oproveedor As New C_proveedor
 
 
                 If Me.Estado = EstadodelFormulario.eEditar Then
-                    Ocliente.Modificar(txt_idcliente.Text, _
+                    Oproveedor.Modificar(txt_idproveedor.Text, _
                                        txt_razonsocial.Text, _
-                                       txt_nombrefantacia.Text, _
+                                       txt_nombreyapellido.Text, _
                                        cbo_localidad.SelectedValue, _
                                        txt_domicilio.Text, _
-                                       txt_teledonocomercial.Text, _
-                                       txt_telefonoparticular.Text, _
+                                       txt_telefono.Text, _
                                        txt_email.Text, _
                                        cbo_categoriaiva.SelectedValue, _
-                                       txt_numerodecuit.Text, _
-                                       cbo_vendedor.SelectedValue, _
-                                       cbo_zona.SelectedValue, _
-                                       txt_secuencia.Text, _
-                                       cbo_estado.SelectedValue)
+                                       txt_numerocuit.Text, _
+                                       cbo_provincia.SelectedValue, _
+                                       cbo_producto.SelectedValue, _
+                                       txt_ciudad.Text, _
+                                       cbo_estado.SelectedValue, _
+                                       txt_codigopostal.Text)
 
 
 
-                    MsgBox("Se modificaron correctamente los datos " + txt_idcliente.Text, MsgBoxStyle.Information, "Exitos!")
+                    MsgBox("Se modificaron correctamente los datos " + txt_idproveedor.Text, MsgBoxStyle.Information, "Exitos!")
                 End If
-            If Me.Estado = EstadodelFormulario.eAgregar Then
+                If Me.Estado = EstadodelFormulario.eAgregar Then
                     Dim resultado As Integer
-                    resultado = Ocliente.Agregar(txt_razonsocial.Text, txt_nombrefantacia.Text, cbo_localidad.SelectedValue, txt_domicilio.Text, txt_telefonoparticular.Text, txt_teledonocomercial.Text, txt_email.Text, cbo_categoriaiva.SelectedValue, txt_numerodecuit.Text, cbo_vendedor.SelectedValue, cbo_zona.SelectedValue, txt_secuencia.Text, cbo_estado.SelectedValue)
-                    MsgBox("Se agregaron correctamente los datos" + txt_razonsocial.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+                    resultado = Oproveedor.Agregar(cbo_localidad.SelectedValue, txt_nombreyapellido.Text, txt_razonsocial.Text, txt_domicilio.Text, txt_telefono.Text, txt_email.Text, cbo_categoriaiva.SelectedValue, txt_numerocuit.Text, cbo_producto.SelectedValue, cbo_provincia.SelectedValue, txt_ciudad.Text, cbo_estado.SelectedValue, txt_codigopostal.Text)
+                    MsgBox("Se agregaron correctamente los datos" + txt_nombreyapellido.Text + " con el código Nro: " + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
                 End If
 
                 If Me.Estado = EstadodelFormulario.eEliminar Then
                     Dim resultado As Integer
-                    resultado = Ocliente.Eliminar(txt_idcliente.Text)
-                    MsgBox("Se eliminó correctamente el cliente" + txt_razonsocial.Text, MsgBoxStyle.Information, "Exitos!")
+                    resultado = Oproveedor.Eliminar(txt_idproveedor.Text)
+                    MsgBox("Se eliminó correctamente el Proverdor" + txt_nombreyapellido.Text, MsgBoxStyle.Information, "Exitos!")
 
                 End If
 
 
-       
-            Me.Estado = EstadodelFormulario.eConsulta
+
+                Me.Estado = EstadodelFormulario.eConsulta
 
             End If
 
@@ -277,52 +261,13 @@ Public Class frm_cliente
 
 #End Region
 
-    Private Sub cmd_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_cancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-       "Se perderán las ultimas modificaciones", _
-       vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
-
-            Me.Estado = EstadodelFormulario.eConsulta
-
-        End If
-
-
-        Exit Sub
-    End Sub
 #Region "Grilla"
-
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles Grilla.CellContentClick
-        'Try
-        txt_idcliente.Text = Grilla.CurrentRow.Cells(0).Value.ToString()
-        txt_nombrefantacia.Text = Grilla.CurrentRow.Cells(1).Value.ToString()
-        txt_razonsocial.Text = Grilla.CurrentRow.Cells(2).Value.ToString()
-
-        cbo_localidad.Text = Grilla.CurrentRow.Cells(3).Value.ToString()
-
-
-        txt_domicilio.Text = Grilla.CurrentRow.Cells(4).Value.ToString()
-        txt_numerodecuit.Text = Grilla.CurrentRow.Cells(5).Value.ToString()
-        txt_teledonocomercial.Text = Grilla.CurrentRow.Cells(6).Value.ToString()
-        txt_telefonoparticular.Text = Grilla.CurrentRow.Cells(7).Value.ToString()
-        txt_email.Text = Grilla.CurrentRow.Cells(8).Value.ToString()
-        cbo_vendedor.Text = Grilla.CurrentRow.Cells(9).Value.ToString()
-        cbo_estado.Text = Grilla.CurrentRow.Cells(10).Value.ToString()
-        cbo_categoriaiva.Text = Grilla.CurrentRow.Cells(11).Value.ToString()
-        cbo_zona.Text = Grilla.CurrentRow.Cells(12).Value.ToString()
-        txt_secuencia.Text = Grilla.CurrentRow.Cells(13).Value.ToString()
-
-        'Catch
-        'End Try
-
-
-    End Sub
-
     Private Sub BuscarTodos()
 
         Dim oDs As New DataSet
-        Dim Oclientes As New C_Clientes
+        Dim Oproveedor As New C_proveedor
 
-        oDs = Oclientes.BuscarTodos
+        oDs = Oproveedor.BuscarTodos
 
         Grilla.DataSource = oDs.Tables(0)
 
@@ -333,16 +278,8 @@ Public Class frm_cliente
 
 
         oDs = Nothing
-        Oclientes = Nothing
-
-
+        Oproveedor = Nothing
     End Sub
-
-#End Region
-
-
-
-
     Private Sub cargarLocalidad()
         Dim conexion As SqlConnection
         Dim comando As New SqlCommand
@@ -366,6 +303,7 @@ Public Class frm_cliente
             cbo_localidad.ValueMember = "id_localidad"
         End If
     End Sub
+
     Private Sub cargarCategortiaiva()
         Dim conexion As SqlConnection
         Dim comando As New SqlCommand
@@ -387,53 +325,6 @@ Public Class frm_cliente
             cbo_categoriaiva.DataSource = ods.Tables(0)
             cbo_categoriaiva.DisplayMember = "Nombre"
             cbo_categoriaiva.ValueMember = "id_categoria"
-        End If
-    End Sub
-
-    Private Sub cargarvendedor()
-        Dim conexion As SqlConnection
-        Dim comando As New SqlCommand
-
-        conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
-        conexion.Open()
-
-        comando.Connection = conexion
-        comando.CommandType = CommandType.StoredProcedure
-        comando.CommandText = ("Vendedor_Buscartodos")
-
-        Dim adaptador As New SqlDataAdapter(comando)
-        Dim ods As New DataSet
-
-        adaptador.Fill(ods)
-
-        If ods.Tables(0).Rows.Count > 0 Then
-
-            cbo_vendedor.DataSource = ods.Tables(0)
-            cbo_vendedor.DisplayMember = "Nombre"
-            cbo_vendedor.ValueMember = "id_vendedor"
-        End If
-    End Sub
-    Private Sub cargarzona()
-        Dim conexion As SqlConnection
-        Dim comando As New SqlCommand
-
-        conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
-        conexion.Open()
-
-        comando.Connection = conexion
-        comando.CommandType = CommandType.StoredProcedure
-        comando.CommandText = ("Zona_Buscartodos")
-
-        Dim adaptador As New SqlDataAdapter(comando)
-        Dim ods As New DataSet
-
-        adaptador.Fill(ods)
-
-        If ods.Tables(0).Rows.Count > 0 Then
-
-            cbo_zona.DataSource = ods.Tables(0)
-            cbo_zona.DisplayMember = "Nombre"
-            cbo_zona.ValueMember = "id_zona"
         End If
     End Sub
     Private Sub cargarestado()
@@ -459,4 +350,66 @@ Public Class frm_cliente
             cbo_estado.ValueMember = "id_estado"
         End If
     End Sub
+    Private Sub cargarprovincia()
+        Dim conexion As SqlConnection
+        Dim comando As New SqlCommand
+
+        conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        conexion.Open()
+
+        comando.Connection = conexion
+        comando.CommandType = CommandType.StoredProcedure
+        comando.CommandText = ("Provincia_Buscartodos")
+
+        Dim adaptador As New SqlDataAdapter(comando)
+        Dim ods As New DataSet
+
+        adaptador.Fill(ods)
+
+        If ods.Tables(0).Rows.Count > 0 Then
+
+            cbo_provincia.DataSource = ods.Tables(0)
+            cbo_provincia.DisplayMember = "Nombre"
+            cbo_provincia.ValueMember = "id_provincia"
+        End If
+    End Sub
+    Private Sub cargarproducto()
+        Dim conexion As SqlConnection
+        Dim comando As New SqlCommand
+
+        conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        conexion.Open()
+
+        comando.Connection = conexion
+        comando.CommandType = CommandType.StoredProcedure
+        comando.CommandText = ("Producto_BuscarTodos")
+
+        Dim adaptador As New SqlDataAdapter(comando)
+        Dim ods As New DataSet
+
+        adaptador.Fill(ods)
+
+        If ods.Tables(0).Rows.Count > 0 Then
+
+            cbo_producto.DataSource = ods.Tables(0)
+            cbo_producto.DisplayMember = "nombreproducto"
+            cbo_producto.ValueMember = "id_prodcto"
+        End If
+    End Sub
+
+#End Region
+
+    Private Sub frm_roveedores_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        CargarGrilla()
+        cargarproducto()
+        cargarLocalidad()
+        cargarCategortiaiva()
+        cargarprovincia()
+        cargarestado()
+        cargarprovincia()
+
+
+    End Sub
+
+
 End Class

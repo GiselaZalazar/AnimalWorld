@@ -31,8 +31,6 @@ Partial Class frm_compras
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txt_idpedido = New System.Windows.Forms.TextBox()
-        Me.txt_idprovedor = New System.Windows.Forms.TextBox()
-        Me.txt_idproducto = New System.Windows.Forms.TextBox()
         Me.txt_nombredelprovedor = New System.Windows.Forms.TextBox()
         Me.txt_fechapedido = New System.Windows.Forms.TextBox()
         Me.txt_cantidad = New System.Windows.Forms.TextBox()
@@ -45,6 +43,11 @@ Partial Class frm_compras
         Me.cmd_modificar = New System.Windows.Forms.Button()
         Me.cmd_aceptar = New System.Windows.Forms.Button()
         Me.cmd_cancelar = New System.Windows.Forms.Button()
+        Me.cbo_proveedor = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txt_preciounitario = New System.Windows.Forms.TextBox()
+        Me.cmd_eliminar = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,32 +56,32 @@ Partial Class frm_compras
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(8, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Id Pedido"
+        Me.Label1.Text = "Pedido"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(8, 31)
+        Me.Label2.Location = New System.Drawing.Point(8, 36)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 13)
+        Me.Label2.Size = New System.Drawing.Size(50, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Id Provedor"
+        Me.Label2.Text = "Provedor"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(8, 54)
+        Me.Label3.Location = New System.Drawing.Point(8, 63)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 13)
+        Me.Label3.Size = New System.Drawing.Size(53, 13)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Id Producto"
+        Me.Label3.Text = " Producto"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(8, 77)
+        Me.Label4.Location = New System.Drawing.Point(8, 97)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(107, 13)
         Me.Label4.TabIndex = 3
@@ -96,7 +99,7 @@ Partial Class frm_compras
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(235, 31)
+        Me.Label6.Location = New System.Drawing.Point(235, 76)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(49, 13)
         Me.Label6.TabIndex = 5
@@ -105,7 +108,7 @@ Partial Class frm_compras
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(235, 54)
+        Me.Label7.Location = New System.Drawing.Point(183, 31)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(125, 13)
         Me.Label7.TabIndex = 6
@@ -114,7 +117,7 @@ Partial Class frm_compras
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(235, 77)
+        Me.Label8.Location = New System.Drawing.Point(253, 97)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(31, 13)
         Me.Label8.TabIndex = 7
@@ -127,23 +130,9 @@ Partial Class frm_compras
         Me.txt_idpedido.Size = New System.Drawing.Size(85, 20)
         Me.txt_idpedido.TabIndex = 8
         '
-        'txt_idprovedor
-        '
-        Me.txt_idprovedor.Location = New System.Drawing.Point(68, 28)
-        Me.txt_idprovedor.Name = "txt_idprovedor"
-        Me.txt_idprovedor.Size = New System.Drawing.Size(85, 20)
-        Me.txt_idprovedor.TabIndex = 9
-        '
-        'txt_idproducto
-        '
-        Me.txt_idproducto.Location = New System.Drawing.Point(68, 51)
-        Me.txt_idproducto.Name = "txt_idproducto"
-        Me.txt_idproducto.Size = New System.Drawing.Size(85, 20)
-        Me.txt_idproducto.TabIndex = 10
-        '
         'txt_nombredelprovedor
         '
-        Me.txt_nombredelprovedor.Location = New System.Drawing.Point(118, 70)
+        Me.txt_nombredelprovedor.Location = New System.Drawing.Point(121, 90)
         Me.txt_nombredelprovedor.Name = "txt_nombredelprovedor"
         Me.txt_nombredelprovedor.Size = New System.Drawing.Size(92, 20)
         Me.txt_nombredelprovedor.TabIndex = 11
@@ -157,43 +146,44 @@ Partial Class frm_compras
         '
         'txt_cantidad
         '
-        Me.txt_cantidad.Location = New System.Drawing.Point(298, 28)
+        Me.txt_cantidad.Location = New System.Drawing.Point(298, 71)
         Me.txt_cantidad.Name = "txt_cantidad"
         Me.txt_cantidad.Size = New System.Drawing.Size(100, 20)
         Me.txt_cantidad.TabIndex = 13
         '
         'txt_numerodecomprobantes
         '
-        Me.txt_numerodecomprobantes.Location = New System.Drawing.Point(366, 51)
+        Me.txt_numerodecomprobantes.Location = New System.Drawing.Point(319, 25)
         Me.txt_numerodecomprobantes.Name = "txt_numerodecomprobantes"
         Me.txt_numerodecomprobantes.Size = New System.Drawing.Size(79, 20)
         Me.txt_numerodecomprobantes.TabIndex = 14
         '
         'txt_total
         '
-        Me.txt_total.Location = New System.Drawing.Point(298, 74)
+        Me.txt_total.Location = New System.Drawing.Point(298, 97)
         Me.txt_total.Name = "txt_total"
         Me.txt_total.Size = New System.Drawing.Size(100, 20)
         Me.txt_total.TabIndex = 15
         '
         'Panel1
         '
-        Me.Panel1.Location = New System.Drawing.Point(-4, 278)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 299)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(459, 22)
+        Me.Panel1.Size = New System.Drawing.Size(509, 22)
         Me.Panel1.TabIndex = 16
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(-4, 100)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 123)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(459, 95)
+        Me.DataGridView1.Size = New System.Drawing.Size(509, 95)
         Me.DataGridView1.TabIndex = 0
         '
         'cmd_limpiar
         '
-        Me.cmd_limpiar.Location = New System.Drawing.Point(11, 201)
+        Me.cmd_limpiar.Location = New System.Drawing.Point(0, 240)
         Me.cmd_limpiar.Name = "cmd_limpiar"
         Me.cmd_limpiar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_limpiar.TabIndex = 17
@@ -202,7 +192,7 @@ Partial Class frm_compras
         '
         'cmd_agregar
         '
-        Me.cmd_agregar.Location = New System.Drawing.Point(298, 201)
+        Me.cmd_agregar.Location = New System.Drawing.Point(274, 240)
         Me.cmd_agregar.Name = "cmd_agregar"
         Me.cmd_agregar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_agregar.TabIndex = 18
@@ -211,7 +201,7 @@ Partial Class frm_compras
         '
         'cmd_modificar
         '
-        Me.cmd_modificar.Location = New System.Drawing.Point(379, 201)
+        Me.cmd_modificar.Location = New System.Drawing.Point(355, 240)
         Me.cmd_modificar.Name = "cmd_modificar"
         Me.cmd_modificar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_modificar.TabIndex = 19
@@ -220,7 +210,7 @@ Partial Class frm_compras
         '
         'cmd_aceptar
         '
-        Me.cmd_aceptar.Location = New System.Drawing.Point(118, 249)
+        Me.cmd_aceptar.Location = New System.Drawing.Point(96, 270)
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_aceptar.TabIndex = 20
@@ -229,18 +219,64 @@ Partial Class frm_compras
         '
         'cmd_cancelar
         '
-        Me.cmd_cancelar.Location = New System.Drawing.Point(199, 249)
+        Me.cmd_cancelar.Location = New System.Drawing.Point(177, 270)
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_cancelar.TabIndex = 21
         Me.cmd_cancelar.Text = "Cancelar"
         Me.cmd_cancelar.UseVisualStyleBackColor = True
         '
+        'cbo_proveedor
+        '
+        Me.cbo_proveedor.FormattingEnabled = True
+        Me.cbo_proveedor.Location = New System.Drawing.Point(68, 28)
+        Me.cbo_proveedor.Name = "cbo_proveedor"
+        Me.cbo_proveedor.Size = New System.Drawing.Size(85, 21)
+        Me.cbo_proveedor.TabIndex = 22
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(76, 55)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(85, 21)
+        Me.ComboBox1.TabIndex = 23
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(222, 55)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(74, 13)
+        Me.Label9.TabIndex = 24
+        Me.Label9.Text = "Precio unitario"
+        '
+        'txt_preciounitario
+        '
+        Me.txt_preciounitario.Location = New System.Drawing.Point(298, 48)
+        Me.txt_preciounitario.Name = "txt_preciounitario"
+        Me.txt_preciounitario.Size = New System.Drawing.Size(100, 20)
+        Me.txt_preciounitario.TabIndex = 25
+        '
+        'cmd_eliminar
+        '
+        Me.cmd_eliminar.Location = New System.Drawing.Point(429, 240)
+        Me.cmd_eliminar.Name = "cmd_eliminar"
+        Me.cmd_eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.cmd_eliminar.TabIndex = 26
+        Me.cmd_eliminar.Text = "Eliminar"
+        Me.cmd_eliminar.UseVisualStyleBackColor = True
+        '
         'frm_compras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(457, 300)
+        Me.ClientSize = New System.Drawing.Size(509, 321)
+        Me.Controls.Add(Me.cmd_eliminar)
+        Me.Controls.Add(Me.txt_preciounitario)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbo_proveedor)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
         Me.Controls.Add(Me.cmd_modificar)
@@ -253,8 +289,6 @@ Partial Class frm_compras
         Me.Controls.Add(Me.txt_cantidad)
         Me.Controls.Add(Me.txt_fechapedido)
         Me.Controls.Add(Me.txt_nombredelprovedor)
-        Me.Controls.Add(Me.txt_idproducto)
-        Me.Controls.Add(Me.txt_idprovedor)
         Me.Controls.Add(Me.txt_idpedido)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -281,8 +315,6 @@ Partial Class frm_compras
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txt_idpedido As System.Windows.Forms.TextBox
-    Friend WithEvents txt_idprovedor As System.Windows.Forms.TextBox
-    Friend WithEvents txt_idproducto As System.Windows.Forms.TextBox
     Friend WithEvents txt_nombredelprovedor As System.Windows.Forms.TextBox
     Friend WithEvents txt_fechapedido As System.Windows.Forms.TextBox
     Friend WithEvents txt_cantidad As System.Windows.Forms.TextBox
@@ -295,4 +327,9 @@ Partial Class frm_compras
     Friend WithEvents cmd_modificar As System.Windows.Forms.Button
     Friend WithEvents cmd_aceptar As System.Windows.Forms.Button
     Friend WithEvents cmd_cancelar As System.Windows.Forms.Button
+    Friend WithEvents cbo_proveedor As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents txt_preciounitario As System.Windows.Forms.TextBox
+    Friend WithEvents cmd_eliminar As System.Windows.Forms.Button
 End Class

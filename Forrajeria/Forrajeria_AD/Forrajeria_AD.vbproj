@@ -83,6 +83,7 @@
     <Compile Include="C_compras.vb" />
     <Compile Include="C_localidad.vb" />
     <Compile Include="C_producto.vb" />
+    <Compile Include="C_proveedor.vb" />
     <Compile Include="C_provincia.vb" />
     <Compile Include="C_rubros.vb" />
     <Compile Include="C_subrubro.vb" />
