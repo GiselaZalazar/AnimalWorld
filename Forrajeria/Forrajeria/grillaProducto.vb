@@ -18,4 +18,8 @@ Public Class grillaProducto
     Private Sub grl_PROD_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_PROD.CellContentClick
         BuscarTodos()
     End Sub
+
+    Private Sub grillaProducto_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        BuscarTodos()
+    End Sub
 End Class

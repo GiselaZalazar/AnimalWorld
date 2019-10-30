@@ -18,4 +18,8 @@ Public Class frm_grillaCliente
     Private Sub grl_CLIENTE_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_CLIENTE.CellContentClick
         BuscarTodos()
     End Sub
+
+    Private Sub frm_grillaCliente_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        BuscarTodos()
+    End Sub
 End Class
