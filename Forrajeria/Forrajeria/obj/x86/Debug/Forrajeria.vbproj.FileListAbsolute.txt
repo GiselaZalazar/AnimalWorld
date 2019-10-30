@@ -86,3 +86,4 @@ D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_vendedor.r
 D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.vbproj.GenerateResource.Cache
 D:\Git\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_roveedores.resources
 >>>>>>> origin/master
+C:\Users\Usuario\Desktop\GitHub\AnimalWorld\Forrajeria\Forrajeria\obj\x86\Debug\Forrajeria.frm_roveedores.resources

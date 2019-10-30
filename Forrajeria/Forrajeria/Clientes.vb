@@ -276,19 +276,6 @@ Public Class frm_cliente
     End Sub
 
 #End Region
-
-    Private Sub cmd_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_cancelar.Click
-        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
-       "Se perderán las ultimas modificaciones", _
-       vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
-
-            Me.Estado = EstadodelFormulario.eConsulta
-
-        End If
-
-
-        Exit Sub
-    End Sub
 #Region "Grilla"
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles Grilla.CellContentClick
@@ -317,6 +304,8 @@ Public Class frm_cliente
 
     End Sub
 
+#End Region
+
     Private Sub BuscarTodos()
 
         Dim oDs As New DataSet
@@ -338,17 +327,25 @@ Public Class frm_cliente
 
     End Sub
 
-#End Region
+    Private Sub cmd_cancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_cancelar.Click
+        If MsgBox("Esta seguro de Cancelar?" & vbCrLf & _
+       "Se perderán las ultimas modificaciones", _
+       vbYesNo, "Confirmacion de Accion") = MsgBoxResult.Yes Then
+
+            Me.Estado = EstadodelFormulario.eConsulta
+
+        End If
 
 
-
+        Exit Sub
+    End Sub
 
     Private Sub cargarLocalidad()
         Dim conexion As SqlConnection
         Dim comando As New SqlCommand
 
         conexion = New SqlConnection("data source = USUARIO-PC; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
-        'conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        ' conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
         conexion.Open()
 
         comando.Connection = conexion
