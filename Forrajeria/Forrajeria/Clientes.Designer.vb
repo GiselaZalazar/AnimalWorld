@@ -401,6 +401,7 @@ Partial Class frm_cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(907, 331)
         Me.Controls.Add(Me.cbo_estado)
         Me.Controls.Add(Me.cbo_zona)
@@ -438,7 +439,9 @@ Partial Class frm_cliente
         Me.Controls.Add(Me.lbl_idcuitiva)
         Me.Controls.Add(Me.lbl_idlocalidad)
         Me.Controls.Add(Me.lbl_idcliente)
+        Me.MaximizeBox = False
         Me.Name = "frm_cliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clientes"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Grilla, System.ComponentModel.ISupportInitialize).EndInit()

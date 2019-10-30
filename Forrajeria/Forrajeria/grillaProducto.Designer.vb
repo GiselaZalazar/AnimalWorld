@@ -38,9 +38,12 @@ Partial Class grillaProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(755, 320)
         Me.Controls.Add(Me.grl_PROD)
+        Me.MaximizeBox = False
         Me.Name = "grillaProducto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "grillaProducto"
         CType(Me.grl_PROD, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

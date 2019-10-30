@@ -38,9 +38,12 @@ Partial Class frm_grillaCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(777, 335)
         Me.Controls.Add(Me.grl_CLIENTE)
+        Me.MaximizeBox = False
         Me.Name = "frm_grillaCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "grillaCliente"
         CType(Me.grl_CLIENTE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
