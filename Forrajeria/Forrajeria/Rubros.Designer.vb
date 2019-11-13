@@ -193,6 +193,8 @@ Partial Class frm_rubros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(575, 338)
         Me.Controls.Add(Me.chk_activo)
         Me.Controls.Add(Me.Label3)
@@ -208,6 +210,7 @@ Partial Class frm_rubros
         Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "frm_rubros"
         Me.Text = "Rubros"
         Me.Panel1.ResumeLayout(False)

@@ -284,12 +284,12 @@ Partial Class frm_cliente
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Grilla.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.Grilla.Size = New System.Drawing.Size(904, 84)
+        Me.Grilla.Size = New System.Drawing.Size(904, 175)
         Me.Grilla.TabIndex = 28
         '
         'cmd_limpiarcliente
         '
-        Me.cmd_limpiarcliente.Location = New System.Drawing.Point(10, 238)
+        Me.cmd_limpiarcliente.Location = New System.Drawing.Point(12, 329)
         Me.cmd_limpiarcliente.Name = "cmd_limpiarcliente"
         Me.cmd_limpiarcliente.Size = New System.Drawing.Size(75, 23)
         Me.cmd_limpiarcliente.TabIndex = 29
@@ -298,7 +298,7 @@ Partial Class frm_cliente
         '
         'cmd_agregarcliente
         '
-        Me.cmd_agregarcliente.Location = New System.Drawing.Point(506, 238)
+        Me.cmd_agregarcliente.Location = New System.Drawing.Point(508, 329)
         Me.cmd_agregarcliente.Name = "cmd_agregarcliente"
         Me.cmd_agregarcliente.Size = New System.Drawing.Size(75, 23)
         Me.cmd_agregarcliente.TabIndex = 30
@@ -307,7 +307,7 @@ Partial Class frm_cliente
         '
         'cmd_modificarcliente
         '
-        Me.cmd_modificarcliente.Location = New System.Drawing.Point(594, 238)
+        Me.cmd_modificarcliente.Location = New System.Drawing.Point(596, 329)
         Me.cmd_modificarcliente.Name = "cmd_modificarcliente"
         Me.cmd_modificarcliente.Size = New System.Drawing.Size(75, 23)
         Me.cmd_modificarcliente.TabIndex = 31
@@ -316,7 +316,7 @@ Partial Class frm_cliente
         '
         'cmd_aceptar
         '
-        Me.cmd_aceptar.Location = New System.Drawing.Point(222, 286)
+        Me.cmd_aceptar.Location = New System.Drawing.Point(224, 377)
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_aceptar.TabIndex = 33
@@ -325,7 +325,7 @@ Partial Class frm_cliente
         '
         'cmd_cancelar
         '
-        Me.cmd_cancelar.Location = New System.Drawing.Point(322, 286)
+        Me.cmd_cancelar.Location = New System.Drawing.Point(324, 377)
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_cancelar.TabIndex = 34
@@ -335,9 +335,9 @@ Partial Class frm_cliente
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.lbl_accion)
-        Me.Panel1.Location = New System.Drawing.Point(1, 315)
+        Me.Panel1.Location = New System.Drawing.Point(1, 402)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(904, 19)
+        Me.Panel1.Size = New System.Drawing.Size(904, 28)
         Me.Panel1.TabIndex = 35
         '
         'lbl_accion
@@ -350,7 +350,7 @@ Partial Class frm_cliente
         '
         'cmd_eliminar
         '
-        Me.cmd_eliminar.Location = New System.Drawing.Point(700, 238)
+        Me.cmd_eliminar.Location = New System.Drawing.Point(702, 329)
         Me.cmd_eliminar.Name = "cmd_eliminar"
         Me.cmd_eliminar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_eliminar.TabIndex = 36
@@ -402,7 +402,8 @@ Partial Class frm_cliente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(907, 331)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(907, 426)
         Me.Controls.Add(Me.cbo_estado)
         Me.Controls.Add(Me.cbo_zona)
         Me.Controls.Add(Me.cbo_vendedor)
@@ -443,7 +444,6 @@ Partial Class frm_cliente
         Me.Name = "frm_cliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clientes"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Grilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

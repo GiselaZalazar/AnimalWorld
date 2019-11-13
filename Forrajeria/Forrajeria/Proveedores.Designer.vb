@@ -138,7 +138,7 @@ Partial Class frm_roveedores
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(380, 9)
+        Me.Label10.Location = New System.Drawing.Point(395, 7)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(72, 13)
         Me.Label10.TabIndex = 9
@@ -147,7 +147,7 @@ Partial Class frm_roveedores
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(380, 34)
+        Me.Label11.Location = New System.Drawing.Point(395, 36)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(49, 13)
         Me.Label11.TabIndex = 10
@@ -156,7 +156,7 @@ Partial Class frm_roveedores
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(380, 58)
+        Me.Label12.Location = New System.Drawing.Point(395, 62)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(32, 13)
         Me.Label12.TabIndex = 11
@@ -174,7 +174,7 @@ Partial Class frm_roveedores
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(380, 85)
+        Me.Label14.Location = New System.Drawing.Point(395, 93)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(40, 13)
         Me.Label14.TabIndex = 13
@@ -183,7 +183,7 @@ Partial Class frm_roveedores
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(380, 111)
+        Me.Label15.Location = New System.Drawing.Point(395, 119)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(87, 13)
         Me.Label15.TabIndex = 14
@@ -229,49 +229,49 @@ Partial Class frm_roveedores
         '
         'txt_nombreyapellido
         '
-        Me.txt_nombreyapellido.Location = New System.Drawing.Point(274, 6)
+        Me.txt_nombreyapellido.Location = New System.Drawing.Point(277, 9)
         Me.txt_nombreyapellido.Name = "txt_nombreyapellido"
         Me.txt_nombreyapellido.Size = New System.Drawing.Size(100, 20)
         Me.txt_nombreyapellido.TabIndex = 20
         '
         'txt_domicilio
         '
-        Me.txt_domicilio.Location = New System.Drawing.Point(245, 31)
+        Me.txt_domicilio.Location = New System.Drawing.Point(277, 37)
         Me.txt_domicilio.Name = "txt_domicilio"
         Me.txt_domicilio.Size = New System.Drawing.Size(100, 20)
         Me.txt_domicilio.TabIndex = 21
         '
         'txt_ciudad
         '
-        Me.txt_ciudad.Location = New System.Drawing.Point(236, 57)
+        Me.txt_ciudad.Location = New System.Drawing.Point(277, 60)
         Me.txt_ciudad.Name = "txt_ciudad"
         Me.txt_ciudad.Size = New System.Drawing.Size(100, 20)
         Me.txt_ciudad.TabIndex = 22
         '
         'txt_codigopostal
         '
-        Me.txt_codigopostal.Location = New System.Drawing.Point(458, 5)
+        Me.txt_codigopostal.Location = New System.Drawing.Point(488, 4)
         Me.txt_codigopostal.Name = "txt_codigopostal"
         Me.txt_codigopostal.Size = New System.Drawing.Size(100, 20)
         Me.txt_codigopostal.TabIndex = 23
         '
         'txt_telefono
         '
-        Me.txt_telefono.Location = New System.Drawing.Point(435, 34)
+        Me.txt_telefono.Location = New System.Drawing.Point(488, 33)
         Me.txt_telefono.Name = "txt_telefono"
         Me.txt_telefono.Size = New System.Drawing.Size(100, 20)
         Me.txt_telefono.TabIndex = 24
         '
         'txt_email
         '
-        Me.txt_email.Location = New System.Drawing.Point(435, 58)
+        Me.txt_email.Location = New System.Drawing.Point(488, 59)
         Me.txt_email.Name = "txt_email"
         Me.txt_email.Size = New System.Drawing.Size(100, 20)
         Me.txt_email.TabIndex = 25
         '
         'txt_numerocuit
         '
-        Me.txt_numerocuit.Location = New System.Drawing.Point(473, 108)
+        Me.txt_numerocuit.Location = New System.Drawing.Point(488, 112)
         Me.txt_numerocuit.Name = "txt_numerocuit"
         Me.txt_numerocuit.Size = New System.Drawing.Size(85, 20)
         Me.txt_numerocuit.TabIndex = 27
@@ -279,7 +279,7 @@ Partial Class frm_roveedores
         'cbo_provincia
         '
         Me.cbo_provincia.FormattingEnabled = True
-        Me.cbo_provincia.Location = New System.Drawing.Point(245, 83)
+        Me.cbo_provincia.Location = New System.Drawing.Point(277, 86)
         Me.cbo_provincia.Name = "cbo_provincia"
         Me.cbo_provincia.Size = New System.Drawing.Size(100, 21)
         Me.cbo_provincia.TabIndex = 28
@@ -287,14 +287,14 @@ Partial Class frm_roveedores
         'cbo_estado
         '
         Me.cbo_estado.FormattingEnabled = True
-        Me.cbo_estado.Location = New System.Drawing.Point(435, 81)
+        Me.cbo_estado.Location = New System.Drawing.Point(488, 85)
         Me.cbo_estado.Name = "cbo_estado"
         Me.cbo_estado.Size = New System.Drawing.Size(94, 21)
         Me.cbo_estado.TabIndex = 29
         '
         'cmd_eliminar
         '
-        Me.cmd_eliminar.Location = New System.Drawing.Point(473, 246)
+        Me.cmd_eliminar.Location = New System.Drawing.Point(542, 246)
         Me.cmd_eliminar.Name = "cmd_eliminar"
         Me.cmd_eliminar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_eliminar.TabIndex = 37
@@ -321,7 +321,7 @@ Partial Class frm_roveedores
         '
         'cmd_modificar
         '
-        Me.cmd_modificar.Location = New System.Drawing.Point(392, 246)
+        Me.cmd_modificar.Location = New System.Drawing.Point(461, 246)
         Me.cmd_modificar.Name = "cmd_modificar"
         Me.cmd_modificar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_modificar.TabIndex = 34
@@ -330,7 +330,7 @@ Partial Class frm_roveedores
         '
         'cmd_agregar
         '
-        Me.cmd_agregar.Location = New System.Drawing.Point(311, 246)
+        Me.cmd_agregar.Location = New System.Drawing.Point(380, 246)
         Me.cmd_agregar.Name = "cmd_agregar"
         Me.cmd_agregar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_agregar.TabIndex = 33
@@ -339,7 +339,7 @@ Partial Class frm_roveedores
         '
         'cmd_limpiar
         '
-        Me.cmd_limpiar.Location = New System.Drawing.Point(0, 246)
+        Me.cmd_limpiar.Location = New System.Drawing.Point(12, 246)
         Me.cmd_limpiar.Name = "cmd_limpiar"
         Me.cmd_limpiar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_limpiar.TabIndex = 32
@@ -351,7 +351,7 @@ Partial Class frm_roveedores
         Me.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Grilla.Location = New System.Drawing.Point(0, 145)
         Me.Grilla.Name = "Grilla"
-        Me.Grilla.Size = New System.Drawing.Size(568, 95)
+        Me.Grilla.Size = New System.Drawing.Size(635, 95)
         Me.Grilla.TabIndex = 30
         '
         'Panel1
@@ -360,7 +360,7 @@ Partial Class frm_roveedores
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 306)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(568, 22)
+        Me.Panel1.Size = New System.Drawing.Size(635, 22)
         Me.Panel1.TabIndex = 31
         '
         'lbl_accion
@@ -375,7 +375,9 @@ Partial Class frm_roveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(568, 328)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(635, 328)
         Me.Controls.Add(Me.cmd_eliminar)
         Me.Controls.Add(Me.cmd_cancelar)
         Me.Controls.Add(Me.cmd_aceptar)
@@ -412,9 +414,9 @@ Partial Class frm_roveedores
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "frm_roveedores"
         Me.Text = "Proveedores"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.Grilla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

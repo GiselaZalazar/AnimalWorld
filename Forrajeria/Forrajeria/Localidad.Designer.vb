@@ -22,8 +22,8 @@ Partial Class frm_localidad
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -114,7 +114,7 @@ Partial Class frm_localidad
         '
         'cmd_eliminar
         '
-        Me.cmd_eliminar.Location = New System.Drawing.Point(409, 210)
+        Me.cmd_eliminar.Location = New System.Drawing.Point(436, 157)
         Me.cmd_eliminar.Name = "cmd_eliminar"
         Me.cmd_eliminar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_eliminar.TabIndex = 37
@@ -139,7 +139,7 @@ Partial Class frm_localidad
         '
         'cmd_cancelar
         '
-        Me.cmd_cancelar.Location = New System.Drawing.Point(452, 274)
+        Me.cmd_cancelar.Location = New System.Drawing.Point(436, 274)
         Me.cmd_cancelar.Name = "cmd_cancelar"
         Me.cmd_cancelar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_cancelar.TabIndex = 35
@@ -148,7 +148,7 @@ Partial Class frm_localidad
         '
         'cmd_aceptar
         '
-        Me.cmd_aceptar.Location = New System.Drawing.Point(371, 274)
+        Me.cmd_aceptar.Location = New System.Drawing.Point(355, 274)
         Me.cmd_aceptar.Name = "cmd_aceptar"
         Me.cmd_aceptar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_aceptar.TabIndex = 34
@@ -157,7 +157,7 @@ Partial Class frm_localidad
         '
         'cmd_modificar
         '
-        Me.cmd_modificar.Location = New System.Drawing.Point(409, 181)
+        Me.cmd_modificar.Location = New System.Drawing.Point(436, 128)
         Me.cmd_modificar.Name = "cmd_modificar"
         Me.cmd_modificar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_modificar.TabIndex = 33
@@ -166,7 +166,7 @@ Partial Class frm_localidad
         '
         'cmd_agregar
         '
-        Me.cmd_agregar.Location = New System.Drawing.Point(409, 152)
+        Me.cmd_agregar.Location = New System.Drawing.Point(436, 99)
         Me.cmd_agregar.Name = "cmd_agregar"
         Me.cmd_agregar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_agregar.TabIndex = 32
@@ -184,26 +184,26 @@ Partial Class frm_localidad
         '
         'Grilla
         '
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Grilla.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Grilla.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Grilla.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Grilla.DefaultCellStyle = DataGridViewCellStyle4
         Me.Grilla.Location = New System.Drawing.Point(0, 81)
         Me.Grilla.Name = "Grilla"
-        Me.Grilla.Size = New System.Drawing.Size(406, 123)
+        Me.Grilla.Size = New System.Drawing.Size(430, 123)
         Me.Grilla.TabIndex = 30
         '
         'chk_activo
@@ -228,7 +228,9 @@ Partial Class frm_localidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(539, 324)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(521, 324)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.chk_activo)
         Me.Controls.Add(Me.cmd_eliminar)
@@ -247,9 +249,9 @@ Partial Class frm_localidad
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "frm_localidad"
         Me.Text = "Localidad"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.Grilla, System.ComponentModel.ISupportInitialize).EndInit()

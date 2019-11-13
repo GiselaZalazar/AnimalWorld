@@ -48,4 +48,9 @@ Public Class frm_forrajeria
         frm_roveedores.Show()
 
     End Sub
+
+    Private Sub SubrubrosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles SubrubrosToolStripMenuItem.Click
+        frm_subrubros.Show()
+
+    End Sub
 End Class

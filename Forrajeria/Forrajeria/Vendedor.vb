@@ -272,7 +272,8 @@ Public Class frm_vendedor
         Dim conexion As SqlConnection
         Dim comando As New SqlCommand
 
-        conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        conexion = New SqlConnection("data source = USUARIO-PC; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        ' conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
         conexion.Open()
 
         comando.Connection = conexion
@@ -295,7 +296,8 @@ Public Class frm_vendedor
         Dim conexion As SqlConnection
         Dim comando As New SqlCommand
 
-        conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        conexion = New SqlConnection("data source = USUARIO-PC; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
+        ' conexion = New SqlConnection("data source = 2CI809B2007251D\SQLEXPRESS; initial catalog = BD_GRUPO4; user id = sa; integrated Security = True ")
         conexion.Open()
 
         comando.Connection = conexion
